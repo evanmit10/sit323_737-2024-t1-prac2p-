@@ -17,7 +17,7 @@ app.listen(port,()=> {
     console.log("hello i'm listening to port "+port);
 })*/
 
-const express= require("express"); //this is part of building an express java webpage after installing express as 'require' is a function for running java code on a server and const decalres variable called express.
+const express= require("express"); //this is part of building an express java webpage after installing express as 'require' is a function for running javascript code on a server and const declares a variable called express.
 const app= express();  //this declares variable called app to link it to variable express to make the webpage work
 const addTwoNumber= (n1,n2) => { //this and the next code below is what the variables n1 and n2 would do in order to make the code work
     return n1+n2;
