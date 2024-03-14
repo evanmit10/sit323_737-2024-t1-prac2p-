@@ -30,7 +30,7 @@ app.get("/addTwoNumber", (req,res)=>{
 });
 
 app.get("/", (req, res) => {
-    const n1 = "<html><body><H1>HELLO THERE </H1></body></html>";
+    const n1 = "<html><body><H1>HELLO WORLD </H1></body></html>";
     res.set('Content-Type', 'text/html');
     res.send(Buffer.from(n1));     
 })
