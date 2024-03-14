@@ -17,8 +17,8 @@ app.listen(port,()=> {
     console.log("hello i'm listening to port "+port);
 })*/
 
-const express= require("express"); //this is part of the express package when installing it
-const app= express(); //same thing with this when installing express
+const express= require("express"); //this is part of building an express java webpage after installing express as 'require' is a function for running java code on a server and const decalres variable called express.
+const app= express();  //this declares variable called app to link it to variable express to make the webpage work
 const addTwoNumber= (n1,n2) => { //this and the next code below is what the variables n1 and n2 would do in order to make the code work
     return n1+n2;
 }
@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
     res.send(Buffer.from(n1)); //this is used to send HTTP response along with its body parameter being the buffer data
 })
 console.log (addTwoNumber(19,12)); //this is to show the result of two added numbers in the terminal/console log which is 31 once running the code
-const port=3040; //this is the chosen port to run the website and the code
+const port=3040; //this is the chosen port to run the website and the code and how to set up the port
 app.listen(port,()=> {
     console.log("hello i'm listening to port "+port); //this is to make the app listen to the console log and the port and show it in the terminal/console log
 })
